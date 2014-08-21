@@ -19,5 +19,6 @@ var a = {
 if (checkNested(a, 'a.b.c.d')) {
     console.log('Continue');
 }
+```
 
 Credits: [CMS - Stackoverflow](http://stackoverflow.com/questions/2631001/javascript-test-for-existence-of-nested-object-key)
