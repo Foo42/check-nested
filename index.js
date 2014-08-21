@@ -9,3 +9,5 @@ function checkNested(obj, objStr) {
     }
     return true;
 }
+
+module.exports = checkNested;
