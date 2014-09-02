@@ -7,7 +7,7 @@ function checkNested(obj, objStr) {
         }
         obj = obj[args[i]];
     }
-    return true;
+    return obj;
 }
 
 module.exports = checkNested;
