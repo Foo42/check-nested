@@ -4,7 +4,7 @@
   "description": "Check for the existence of nested objects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --check-leaks -G tests"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/AlexMeah/check-nested/issues"
   },
-  "homepage": "https://github.com/AlexMeah/check-nested"
+  "homepage": "https://github.com/AlexMeah/check-nested",
+  "devDependencies": {
+    "chai": "^2.1.1"
+  }
 }
