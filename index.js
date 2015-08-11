@@ -1,5 +1,5 @@
 function checkNested(obj, objStr) {
-    var args = objStr.split(/[\W]+/g).filter(function (x) {
+    var args = objStr.split(/[\.\[\]\"\']+/g).filter(function (x) {
         return x !== '';
     });
 

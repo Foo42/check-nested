@@ -15,7 +15,6 @@ describe('Check Nested', function () {
         done();
     });
 
-
     it('should handle square bracket notation', function (done) {
         var testObj = {
             a: {
@@ -40,6 +39,19 @@ describe('Check Nested', function () {
 
         checkNested(testObj, 'a.b["c"]').should.be.true;
         done();
+    });
+
+    it('should support non-word properties', function () {
+        var testObj = {
+            a: {
+                '$': {
+                    c: true
+                }
+            }
+        };
+
+        checkNested(testObj, 'a.$.c').should.be.true;
+        checkNested(testObj, 'a.$.banana').should.be.false;
     });
 
     it.skip('should handle spaces', function (done) {
